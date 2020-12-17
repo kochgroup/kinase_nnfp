@@ -23,9 +23,10 @@ A yaml file containing all requirements is provided. This can be readily setup u
     conda activate get_nnfp_env
     ```
 # Generate Fingerprints
-you can use a csv file containing a column with SMILES strings as input to our model.
+You can use a csv file containing a column with SMILES strings as input to our model.
+Naviagte to `*your path*/kinase_nnfp/code` and run:
 
 ```
-
+python -i *path to your data* -s *colum*
 ```
 
