@@ -35,7 +35,7 @@ class MLP(torch.nn.Module):
        x= self.hidden[-1](x)        
        return(x, fingerprint)
 
-def get_fingerprints(data, label = "smiles",bitSize_circular=1024, morgan_radius=2):
+def get_fingerprints(data, label ,bitSize_circular=1024, morgan_radius=2):
     
     index_not_convertable = []
     
@@ -43,9 +43,7 @@ def get_fingerprints(data, label = "smiles",bitSize_circular=1024, morgan_radius
     Computes the Fingerprints from Molecules
     """
     # if label is string get colum number
-    if type(label)==str:
-        label  = np.where(data.columns== label)[0][0]
- 
+
     #Disable printing Warnings
     RDLogger.DisableLog('rdApp.*')  
     
@@ -62,5 +60,6 @@ def get_fingerprints(data, label = "smiles",bitSize_circular=1024, morgan_radius
     
     if len(index_not_convertable)> 0:
         print("\n",len(index_not_convertable), " Molecules could not be read.")  
+    
     
     return feature_matrix, index_not_convertable
