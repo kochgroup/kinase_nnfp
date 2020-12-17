@@ -1,2 +1,5 @@
-# kinase_nnfp
-Code to generate kinase-specific fingerprints based on the ECFP4 1024bits
+# Kinase Specifc Fingerprints
+
+The provided Code can be used to generate Fingerprints that are specific to Kinases. 
+
+
