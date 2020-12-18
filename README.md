@@ -1,5 +1,6 @@
 # Kinase Specifc Fingerprints
 
+![](model_overview.png)
 
 The provided code can be used to generate Molecular Fingerprints that are specific to Kinases. 
 
