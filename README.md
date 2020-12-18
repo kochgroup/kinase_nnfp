@@ -27,6 +27,18 @@ You can use a csv file containing a column with SMILES strings as input to our m
 Naviagte to `*your path*/kinase_nnfp/code` and run:
 
 ```
-python -i *path to your data* -s *colum*
+python get_fp.py ../data/example_data.csv -s smiles
 ```
+`smiles` is the name of the column containing the SMILES strings.
+
+You can also provide the Index of the column containing the SMILES. 
+```
+python get_fp.py ../data/example_data.csv -s 0
+```
+If you do not have a header add the `-n` flag
+
+```
+python get_fp.py ../data/example_data.csv -s 0 -n
+```
+
 
