@@ -2,8 +2,15 @@
 
 ![](fp_gen_3.png)
 
-The provided code can be used to generate Molecular Fingerprints that are specific to Kinases. 
+This Repository accopmanys our work on:
+"Using Domain-Specific Fingerprints Generated Through Neural Networks to Enhance Ligand-based Virtual Screening."
 
+https://doi.org/10.26434/chemrxiv.12894800.v1
+
+
+The provided code can be used to generate Molecular Fingerprints that are specific to Kinases. 
+While in the paper we explore many different architectures, here we only use a MLP trained for multitask prediction to generate the neural fingerprints. 
+This selection was made due to the fact that is was the best perfoming fingerprint.
 
 
 # Requirements
