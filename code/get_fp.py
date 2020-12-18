@@ -9,9 +9,6 @@ parser.add_argument("-n", "--no_header", default = "infer", action='store_const'
 args = parser.parse_args()
 
 
-if (type(args.smiles) == str) & (args.no_header is None):
-    print("\n ERROR: If you want to index the column containing the SMILES by name, then you need to keep the header! \n")
-    exit()
     
     
 data = pd.read_csv(args.input, header=args.no_header)
@@ -20,7 +17,12 @@ data = pd.read_csv(args.input, header=args.no_header)
 try:
     args.smiles=int(args.smiles)
 except:
+    if (type(args.smiles) == str) & (args.no_header is None):
+        print("\n ERROR: If you want to index the column containing the SMILES by name, then you need to keep the header! \n")
+        exit()
     args.smiles  = np.where(data.columns== args.smiles)[0][0]
+
+
 
 
 print("\nStart calculating the ECFP4 from SMILES:")
@@ -36,6 +38,6 @@ nnfp = pd.DataFrame(nnfp)
 
 out=pd.concat([data.iloc[:,args.smiles], nnfp], axis=1)
 output_path="/".join(args.input.split("/")[:-1])
-out.to_csv(output_path+"/nnfp_output,csv", index=False)
+out.to_csv(output_path+"/nnfp_output.csv", index=False)
 
 print("Finished!\n\nOutput can be found at:\n"+ str(os.path.abspath(output_path)))
