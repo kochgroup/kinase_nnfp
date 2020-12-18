@@ -12,7 +12,7 @@ The provided code can be used to generate Molecular Fingerprints that are specif
 * Pytorch 1.6
 * rdKit 2019.03.4
 
-A yaml file containing all requirements is provided. This can be readily setup using conda.
+A yml file containing all requirements is provided. This can be easily setup using conda.
 
 
 # Installation 
