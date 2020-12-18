@@ -1,6 +1,8 @@
 # Kinase Specifc Fingerprints
 
-The provided Code can be used to generate Fingerprints that are specific to Kinases. 
+
+The provided code can be used to generate Molecular Fingerprints that are specific to Kinases. 
+
 
 
 # Requirements
