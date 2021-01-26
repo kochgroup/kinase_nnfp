@@ -191,4 +191,10 @@ dependencies:
   - zipp=3.4.0=pyhd3eb1b0_0
   - zlib=1.2.11=h7b6447c_3
   - zstd=1.4.5=h9ceee32_0
+  - pip:
+    - joblib==1.0.0
+    - scikit-learn==0.24.1
+    - scipy==1.6.0
+    - sklearn==0.0
+    - threadpoolctl==2.1.0
 prefix: /nfs/home/jmenke2/anaconda3/envs/get_nnfp_env
