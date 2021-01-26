@@ -50,5 +50,25 @@ If you do not have a header add the `-n` flag
 ```
 python get_fp.py ../data/example_data.csv -s 0 -n
 ```
+# Perform a Similarity Seach based on the produced Fingerprint
+If you want to use the NNFPs for a similarity search make sure that the query is in the same file as the molecules you want to screen before you generate the Fingerprints.
+
+With `python simsearch.py *path of fingerprintfile* -q *index of the query*` the similairty search can be performed
+
+Given you generated fingerprints for the `example_data.csv`. The following code will perform a similarity search for the query with index 0 
+
+```
+python simsearch.py ../data/nnfp_output.csv -q 0
+```
+You can also perform a similarity search for multiple queries by adding addtional indices.
+
+```
+python simsearch.py ../data/nnfp_output.csv -q 0 15 8 1 84
+```
+A new folder will be generated containing the results of the similairty search
+Like in the original paper, the cosine similarity is used for the search.
+
+
+
 
 
