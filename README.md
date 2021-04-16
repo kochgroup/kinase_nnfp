@@ -5,7 +5,7 @@
 This Repository accopmanys our work on:
 "Using Domain-Specific Fingerprints Generated Through Neural Networks to Enhance Ligand-based Virtual Screening."
 
-https://doi.org/10.26434/chemrxiv.12894800.v1
+https://pubs.acs.org/doi/10.1021/acs.jcim.0c01208?
 
 
 The provided code can be used to generate Molecular Fingerprints that are specific to Kinases. 
