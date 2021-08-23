@@ -2,7 +2,7 @@
 
 ![](fp_gen_3.png)
 
-This Repository accopmanys our work on:
+This Repository accompanys our work on:
 "Using Domain-Specific Fingerprints Generated Through Neural Networks to Enhance Ligand-based Virtual Screening."
 
 https://pubs.acs.org/doi/10.1021/acs.jcim.0c01208?
